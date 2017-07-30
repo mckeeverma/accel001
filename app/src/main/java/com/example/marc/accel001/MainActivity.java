@@ -9,6 +9,7 @@ import android.text.Html;
 import android.view.Menu;
 import android.widget.TextView;
 
+@SuppressWarnings("deprecation")
 public class MainActivity extends Activity implements SensorEventListener {
 
     private SensorManager sensorManager;
@@ -57,9 +58,13 @@ public class MainActivity extends Activity implements SensorEventListener {
             float yVal = event.values[1];
             float zVal = event.values[2];
 
-            sx = "X Value : <font color = '#800080'> " + xVal + "</font>";
-            sy = "Y Value : <font color = '#800080'> " + yVal + "</font>";
-            sz = "Z Value : <font color = '#800080'> " + zVal + "</font>";
+            int xInt = (int) xVal;
+            int yInt = (int) yVal;
+            int zInt = (int) zVal;
+
+            sx = "X Value : <font color = '#800080'> " + xInt + "</font>";
+            sy = "Y Value : <font color = '#800080'> " + yInt + "</font>";
+            sz = "Z Value : <font color = '#800080'> " + zInt + "</font>";
 
             x.setText(Html.fromHtml(sx));
             y.setText(Html.fromHtml(sy));
