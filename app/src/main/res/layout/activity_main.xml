@@ -4,48 +4,48 @@
                 android:id="@+id/rl"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="com.example.marc.accel001.MainActivity" >
+                tools:context="com.example.marc.accel001.MainActivity">
 
     <TextView
         android:id="@+id/textView1"
-        android:textSize="25sp"
-        android:textColor="#4169E1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
-        android:text="Accelerometer" />
+        android:text="Accelerometer"
+        android:textColor="#4169E1"
+        android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/textView2"
-        android:textSize="18sp"
-        android:textColor="#FF0000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="X Value" />
+        android:text="X Value"
+        android:textColor="#FF0000"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textView3"
-        android:textSize="18sp"
-        android:textColor="#FF0000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Y Value" />
+        android:text="Y Value"
+        android:textColor="#FF0000"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/textView4"
-        android:textSize="18sp"
-        android:textColor="#FF0000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Z Value" />
+        android:text="Z Value"
+        android:textColor="#FF0000"
+        android:textSize="18sp"/>
 
 </RelativeLayout>
