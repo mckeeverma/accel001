@@ -27,6 +27,8 @@ public class MainActivity extends Activity implements SensorEventListener {
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensorManager.registerListener(this, sensorManager.getDefaultSensor
                 (Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+        //sensorManager.unregisterListener(this, sensorManager.getDefaultSensor
+        //        (Sensor.TYPE_ACCELEROMETER));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
